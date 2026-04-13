@@ -17,12 +17,11 @@
       h1{
         color:lightpink;
         font-size:80px;
-        margin-left: 700px;
-        margin-right: 700px;
+        text-align: center;
         font-family:cursive;
       }
       p{
-        color:rgb(255, 255, 255);
+        color:hotpink;
         font-size:50px;
         text-align: center;
       }
@@ -31,12 +30,28 @@
         font-size: 60px;
         text-align: center;
       }
+      
     </style>
     <img src="/image/cyber.jpg" alt="cyber.jpg icon"style="width:2000px;height:300px;">
     <h1><b>Sonic Echo</b></h1>
 
+    <button class="button" onclick="typeWriter()">click me!</button>
     
+    <p id="demo"></p>
 
+  <script>
+    var i = 0;
+    var txt = 'Welcome to Sonic Echo!';
+    var speed = 50;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
 
     <nav class="navbar">
       <ul>
@@ -48,7 +63,7 @@
       </ul>
     </nav>
     
-    <p id="demo" class="center">Sonic Echo is an interactive website that allows you, the user, to find music that suits your tastes. There is something here for all!</p>
+    <p class="center">Sonic Echo is an interactive website that allows you, the user, to find music that suits your tastes. There is something here for all!</p>
     <h2>Which genre do you want to listen to today?</h2>
    
 
