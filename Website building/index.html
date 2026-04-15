@@ -7,7 +7,11 @@
   </head>
   <body>
       <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <style>
+      
       body{
         background-color: rgb(255, 222, 230)
       }
@@ -16,26 +20,33 @@
       }
       h1{
         color:lightpink;
-        font-size:80px;
+        font-size:100px;
         text-align: center;
-        font-family:cursive;
       }
       p{
         color:hotpink;
-        font-size:50px;
+        font-size:35px;
         text-align: center;
+        font-style: normal;
       }
       h2{
         color:hotpink;
         font-size: 60px;
         text-align: center;
       }
-      
+      .myDiv{
+        text-align: center;
+      }
     </style>
-    <img src="/image/cyber.jpg" alt="cyber.jpg icon"style="width:2000px;height:300px;">
+    <img src="/image/pixlebackground.jpeg" alt="cyber.jpg icon"style="width:2030px;height:300px;">
     <h1><b>Sonic Echo</b></h1>
 
-    <button class="button" onclick="typeWriter()">click me!</button>
+    <div class="myDiv">
+      <button class="icon-button" onclick="typeWriter()">
+        <img src="/image/pixleheart3.png" alt="submit">
+      </button>
+      <img src="/image/pixlecloud.png" alt="cloud" style="width:125px; height: 125px">
+    </div> 
     
     <p id="demo"></p>
 
