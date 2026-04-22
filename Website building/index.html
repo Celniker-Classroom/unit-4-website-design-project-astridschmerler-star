@@ -19,11 +19,14 @@
       }
       h3{
         font-size: 30px;
+        text-align: center;
+        color: white
       }
       h1{
         color:lightpink;
         font-size:100px;
-        text-align: center;
+        margin-left:700px;
+        margin-right:75px;
       }
       p{
         color:hotpink;
@@ -36,20 +39,24 @@
         font-size: 60px;
         text-align: center;
       }
-      .myDiv{
-        text-align: center;
+      .hide{
+        display: none;
+      }
+      table, th, td {
+        border: 1px solid black;
       }
     </style>
-    
-    <div class="img-magnifier-container">
-      <img id="myimage" src="img_girl.jpg" width="600" height="400" alt="Girl">
-    </div>
 
-    <img src="/image/pixlebackground.jpeg" alt="cyber.jpg icon"style="width:2030px;height:300px;">
+
+    <img src="/image/pixlebackground.jpeg" alt="cyber.jpg icon"style="width:1885px;height:300px;">
     
+
     <a href="#" class="fa fa-instagram"></a>
     <a href="#" class="fa fa-pinterest"></a>
     <a href="#" class="fa fa-snapchat-ghost"></a>
+
+
+    <img class="crop" src="/image/pinknote.png" alt="cyber.jpg icon"style="width:400px;height:400px;">
 
     <h1><b>Sonic Echo</b></h1>
 
@@ -68,12 +75,18 @@
     var speed = 50;
 
     function typeWriter() {
-      if (i < txt.length) {
+        if (i < txt.length) {
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-      }
+        }
     }
+
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+
   </script>
 
     <nav class="navbar">
@@ -86,12 +99,39 @@
       </ul>
     </nav>
     
+    <button onclick="myFunction()">Toggle dark mode</button>
+
     <p class="center">Sonic Echo is an interactive website that allows you, the user, to find music that suits your tastes. There is something here for all!</p>
     <h2>Which genre do you want to listen to today?</h2>
-   
+
+
+    <input class="molang" type="button" onclick="alert('&#128150')" value="Click Me!">
 
     
-<img src = 
+    <h3>Creators picks</h3>
+
+    <table style="width:100%">
+      <tr>
+        <th>Song Title</th>
+        <th>Artist</th> 
+        <th>Genre</th>
+      </tr>
+      <tr>
+        <td>White Keys</td>
+        <td>Dominik Fike</td>
+        <td>Indie</td>
+      </tr>
+      <tr>
+        <td>Strawberry Cheesecake</td>
+        <td>Kii Kii</td>
+        <td>Kpop</td>
+      </tr>
+      <tr>
+        <td>Les</td>
+        <td>Childish Gambino</td>
+        <td>Rap</td>
+      </tr>
+    </table>
   </body>
 </html>
 

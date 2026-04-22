@@ -27,11 +27,101 @@ body {
     margin-left: 140px;
     margin-right: 140px;
 }
+.navbar2 ul{
+    list-style-type: none;
+    background-color: goldenrod;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar2 a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.navbar2 a:hover{
+    background-color: burlywood;
+}
+.navbar2 li{
+    float: left;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.navbar3 ul{
+    list-style-type: none;
+    background-color: rgb(46, 190, 238);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar3 a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.navbar3 a:hover{
+    background-color: rgb(2, 108, 134);
+}
+.navbar3 li{
+    float: left;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.navbar4 ul{
+    list-style-type: none;
+    background-color: darkred;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar4 a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.navbar4 a:hover{
+    background-color: lightcoral;
+}
+.navbar4 li{
+    float: left;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.navbar5 ul{
+    list-style-type: none;
+    background-color: plum;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar5 a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.navbar5 a:hover{
+    background-color: rgb(254, 213, 254);
+}
+.navbar5 li{
+    float: left;
+    margin-left: 140px;
+    margin-right: 140px;
+}
 .icon-button {
     background: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
+    margin-left: 825px;
+    clear: right;
 }
 .icon-button img{
     width: 100px;
@@ -55,7 +145,7 @@ body {
   padding: 5px;
   width: 200px;
   height: 150px;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 .fa {
   padding: 20px;
@@ -70,15 +160,58 @@ body {
     opacity: 0.7;
 }
 .fa-instagram {
-  background: #125688;
+  background: #9bd5ff;
   color: white;
 }
 .fa-pinterest {
-  background: #cb2027;
+  background: #ff8488;
   color: white;
 }
 .fa-snapchat-ghost {
-  background: #fffc00;
+  background: hsl(59, 100%, 86%);
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.crop{
+    clip-path: square(50%);
+    float:right;
+
+}
+.container{
+    display:flex;
+    background-color: transparent;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.container div{
+  background-color: transparent;
+  margin: 10px;
+  padding: 20px;
+  font-size: 24px;
+}
+.border{
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+.floatstyle{
+    float:right;
+    border-radius: 25px;
+    background-color: goldenrod;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 400px;
+}
+.CB{
+    float:left;
+}
+.clear{
+    clear: left;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
 }
